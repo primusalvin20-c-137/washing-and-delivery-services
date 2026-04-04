@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickServe Laundry & Food Delivery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #34495e;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #1abc9c;
+    }
+    .container {
+      padding: 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .buttons button {
+      padding: 12px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #1abc9c;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .buttons button:hover {
+      background: #16a085;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mary Services</h1>
+  <p>Laundry & Food Delivery Services</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Laundry Service">
+      <div class="card-content">
+        <h3>Laundry Service</h3>
+        <p>Fast, clean, and reliable laundry services. We wash, dry, and fold your clothes with care.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Food Delivery">
+      <div class="card-content">
+        <h3>Food Delivery</h3>
+        <p>Delicious meals delivered immediately after an order placement quick and ontime</p>
+<footer>
+  <div style="max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;">
+    
+    <div>
+      <h3>Mary services</h3>
+      <p>Your trusted laundry & food delivery partner. Fast, reliable, and convenient services at your doorstep.</p>
+    </div>
+
+    <div>
+      <h3>Contact Info</h3>
+      <p>📞 0118861782</p>
+      <p>📧 mary'slaundry@gmail.com</p>
+      <p>📍 Karatina Main campus G town</p>
+    </div>
+
+    <div>
+      <h3>Mary Links</h3>
+      <p><a onclick="showSection('home')" style="color:white;cursor:pointer;">Home</a></p>
+      <p><a onclick="showSection('services')" style="color:white;cursor:pointer;">Services</a></p>
+      <p><a onclick="showSection('contact')" style="color:white;cursor:pointer;">Contact</a></p>
+    </div>
+
+  </div>
+
+  <hr style="margin:20px 0;border:0;border-top:1px solid #ccc;">
+  <p style="text-align:center;">&copy; 2026 MaryServices | All Rights Reserved</p>
+</footer>
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
